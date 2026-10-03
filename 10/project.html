@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #we {
+            opacity: 100;
+
+        }
+
+        .none {
+            position: relative;
+
+            height: 95vh;
+            width: 99vw;
+            border: 2px solid black;
+            background-repeat: no-repeat;
+             isolation: isolate;
+        }
+
+        /* Set your main container to relative positioning, create a absolute-positioned ::before element for the image, and keep your text separate or layered above it. */
+        
+        .none::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkUc9-px5cJzVoQUQ7LEZCtH76haXG09A1bzdDKQTQdA&s=10);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
+            /* Change this value (0.0 to 1.0) to adjust background transparency */
+            z-index: -1;
+            /* Pushes the background image behind the text */
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="none">
+        <p id="we"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae obcaecati, ad repellendus
+            officia perferendis est incidunt deserunt natus voluptatem, dolor culpa quasi veniam, saepe blanditiis
+            accusamus earum assumenda voluptatum soluta placeat odio vero quae. Perspiciatis iusto, provident
+            necessitatibus voluptatem, quaerat voluptate explicabo sint, hic doloremque dolore iste exercitationem illo
+            consequatur eius vero assumenda veniam natus nobis maxime quibusdam voluptas. Dolore quo quis porro sit,
+            velit natus magni blanditiis, eveniet non nobis consequuntur voluptatum deleniti quos aut doloribus. Esse,
+            accusantium maiores quas placeat accusamus voluptate autem, quod commodi beatae voluptatem omnis. Placeat
+            iusto culpa velit nesciunt id sapiente necessitatibus deleniti corporis.
+        <p>
+    </div>
+
+
+</body>
+
+</html>
