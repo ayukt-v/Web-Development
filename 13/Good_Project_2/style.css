@@ -1,0 +1,138 @@
+.background {
+    height: 300vh;
+    /* display: flex; */
+}
+
+/* Hide the checkbox completely  */
+#menu-toggle {
+    display: none;
+}
+
+/* Icon Button Styling */
+.button {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.button:hover {
+    background-color: #f8f9fa;
+}
+
+.bar {
+    width: 22px;
+    height: 2px;
+    background-color: #202122;
+    margin: 4px 0;
+    display: block;
+}
+
+/* Dropdown Container */
+.menu-container {
+    padding: 20px;
+    position: relative;
+    display: inline-block;
+    width: 172vh;
+    background-color: bisque;
+    height: 5vh;
+}
+
+/* Sidebar Menu Layout (Hidden by Default) */
+.sidebar-menu {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 240px;
+    background: #ffffff;
+    border: 1px solid #a2a9b1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+/* Header Layout inside Menu */
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 10px 15px;
+    border-bottom: 1px solid #eaecf0;
+}
+
+.menu-header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #202122;
+}
+
+.sidebar-btn {
+    font-size: 12px;
+    color: #202122;
+    background: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    padding: 4px 8px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+/* Navigation List Styling */
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.menu-list li a {
+    display: block;
+    padding: 8px 15px;
+    color: #36c;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu-list li a:hover {
+    background-color: #eaecf0;
+    text-decoration: underline;
+}
+
+/* Separator lines for sectioning links */
+.menu-list .separator {
+    height: 1px;
+    background-color: #eaecf0;
+    margin: 8px 0;
+}
+
+.menu-list .grey-text {
+    color: #202122;
+}
+
+/* 🔑 THE CORE LOGIC: Show the sidebar when the hidden checkbox is checked */
+#menu-toggle:checked~.sidebar-menu {
+    display: block;
+}
+
+.bodyc {}
+
+.left {
+    /* background-color: aquamarine; */
+    height: 90vh;
+    width: 30vh;
+    /* position: fixed; */
+
+}
+
+.left_up {
+    background-color: #36c;
+    height: 10vh;
+    width: 30vh;
+}
+
+.left_down {
+    background-color: aquamarine;
+    height: 70vh;
+    width: 30;
+}

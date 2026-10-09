@@ -1,4 +1,7 @@
 /*                                               Navigation Bar                       */
+body{
+    position: relative;
+}
 .nav {
     background-color: #FFFFFF;
     height: 75px;
@@ -132,11 +135,11 @@
 .first-slide-division-left1 {
     /* background-color: #687086; */
     height: 15vh;
-    position: relative;
+    /* position: relative; */
 }
 
 .softEngineer {
-    position: absolute;
+    /* position: absolute; */
     /* margin-top: 30px; */
     font-family: sans-serif;
     font-size: 13px;
@@ -256,6 +259,7 @@
 .first-slide-right {
     height: 90vh;
     width: 50%;
+    /* position: relative; */
     /* background-color: aquamarine; */
 }
 
@@ -263,20 +267,26 @@
     height: 50vh;
     width: 50vh;
     background-color: #EBE9FF;
+  
+    
     border-radius: 50%;
     margin-left: 115px;
     margin-top: 140px;
-    position: relative;
+    /* position: relative; */
 }
 
 .first_slide_right_small_circle {
     height: 35vh;
     width: 35vh;
     background-color: #635BFF;
-    position: absolute;
+    /* position: relative; */
+      justify-content: center;
+            align-items: center;
+   
     border-radius: 50%;
-    margin-left: 55px;
-    margin-top: 53px;
+    /* margin-left: 55px; */
+    /* margin-top: 30px; */
+    
 }
 
 .AM {
@@ -290,12 +300,13 @@
 }
 
 .Years_Experience_Box {
-    position: absolute;
+    /* position: absolute; */
     height: 15vh;
     width: 25vh;
     background-color: #FFFFFF;
-    margin-left: 240px;
-    margin-top: 230px;
+    margin-left: 220px;
+    /* margin-top: 230px; */
+    /* margin-bottom: 90px; */
     border-radius: 15px;
 }
 
@@ -410,9 +421,11 @@
      background-color: rgb(239, 242, 246);
     height: 80vh;
     width: 1264px;
+    /* display: flex; */
     
 }
 .second_slide_left_up{
+    /* background-color: #635BFF; */
        display: grid;
         grid-template-columns: repeat(20, fr);
     grid-template-rows: repeat(20, 1fr);
@@ -423,7 +436,7 @@
 .about_me{
     /* background-color: aquamarine; */
     grid-row: 6/7;
-    grid-column: 6/20;
+    grid-column: 9/20;
      font-family: sans-serif;
     font-size: 13px;
     font-weight: 700;
@@ -435,34 +448,61 @@
          font-size: 40px;
          font-weight: 600;
           grid-row: 8/12;
-    grid-column: 6/20;
+    grid-column: 9/20;
 }
 .second_slide_content_1{
     /* background-color: #635BFF; */
-    grid-row: 8/10;
-    grid-column: 5/15;
+    grid-row: 13/15;
+    grid-column: 9/15;
      font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     color: #687086;
 }
 .second_slide_content_2{
-    grid-row: 10/12;
-    grid-column: 3/15;
+    grid-row: 17/20;
+    grid-column: 9/15;
       font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     color: #687086;
 }
-.Download_resume_box{
-      grid-row: 12/14;
-    grid-column: 3/5;
-    /* height: 100px; */
+.download_resume_box{
+  background-color: #635BFF;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    margin-left: 35px;
 }
-/* .Download_resume{
+.download_resume{
+    /* margin-top: 5px; */
+    margin-left: 25px;
     font-size: 50px;
     background-color: #635BFF;
      border-radius: 10px;
-      font-size: 14px;
+      font-size: 20px;
       font-weight: 900;
     color: white;
 
-} */
+}
+.third_slide{
+       background-color:#FFFFFF;
+    height: 60vh;
+    width: 1264px;
+}
+.my_skills{
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #635BFF;
+    margin-top: 90px;
+    margin-left: 60px;
+
+}
+.Technologies_I_work_with{
+    font-family: Arial, Helvetica, sans-serif;
+         font-size: 40px;
+         font-weight: 600;
+         margin-top: 30px;
+         margin-left: 56px;
+
+}
